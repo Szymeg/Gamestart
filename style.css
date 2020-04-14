@@ -1,0 +1,28 @@
+.logo {
+    font-size: 5vw;
+    color: #7952b3;
+}
+
+.AMESTART {
+    color: #7952b3; 
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+    .logo {
+        font-size: 2.5em;
+    }
+  }
+
+@media only screen and (max-width: 991px) {
+    .AMESTART {
+        font-size: 0;
+    }
+  }
+@media only screen and (max-width: 1200px) {
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+  }
