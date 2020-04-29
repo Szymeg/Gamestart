@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!--other-->
@@ -16,15 +15,15 @@
   </head>
   <body>
     <!-- navbar-->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><img src="G.png" width="32" height="32" alt="logo"><span class="AMESTART"> AMESTART</span></a>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html"><img src="G.png" width="32" height="32" alt="logo"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav mr-auto">
-                  <a class="nav-item nav-link" href="index.html">HOME<span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="account.html">MY ACCOUNT</a>
+                  <a class="nav-item nav-link" href="index.html">HOME</a>
+                  <a class="nav-item nav-link active" href="account.html">MY ACCOUNT<span class="sr-only">(current)</span></a>
                   <a class="nav-item nav-link" href="store.html">STORE</a>
                   <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">G I V E A W A Y</a>
               </div>
@@ -36,14 +35,14 @@
         </header>
     
       <!--form-->
-        <form class="pt-4 pl-4">
+        <form class="pt-4 pl-4" style="background-image: linear-gradient( #343a40, #33AEFF, white);">
             <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="exampleInputEmail1" class="text-light">Email address</label>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <small id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
+              <label for="exampleInputPassword1" class="text-light">Password</label>
               <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
             <div class="form-group form-check">
@@ -51,12 +50,13 @@
               <label class="form-check-label" for="exampleCheck1">Stay signed in</label>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
+            <p class="pt-3 text-center">Not a member? <a href="">Create your Gamestart account now!</a></p>
           </form>
 
          <!--footer-->
-         <footer class="row footer mx-0 mt-5 bg-dark text-center py-2 text-muted align-items-end" style="position: absolute; bottom: 0; width: 100%;">
+         <footer class="row footer mx-0 mt-5 bg-dark text-center py-2 text-muted align-items-end">
           <div class="col-sm-6 col-12">
-            © 2020 Copyright: <a href="index.html" class="text-light"> GAMESTART</a>
+            <span>© 2020 Copyright: <a href="index.html" class="text-light"> GAMESTART</a></span>
           </div>
           <div class="col-sm-6">
             <a href="https://github.com/Szymeg" class="pr-5">
@@ -66,8 +66,7 @@
               <img src="link.png" title="Szymon linkedin" alt="Creator's linkedin" width="32" height="32">
             </a>
           </div>
-
-       </footer>
+        </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

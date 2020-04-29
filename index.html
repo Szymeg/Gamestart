@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    
+    
     <!--other-->
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -16,77 +16,67 @@
   </head>
   <body>
     <!-- navbar-->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><img src="G.png" width="32" height="32" alt="logo"><span class="AMESTART"> AMESTART</span></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav mr-auto">
-                  <a class="nav-item nav-link active" href="index.html">HOME<span class="sr-only">(current)</span></a>
-                  <a class="nav-item nav-link" href="account.html">MY ACCOUNT</a>
-                  <a class="nav-item nav-link" href="store.html">STORE</a>
-                  <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">G I V E A W A Y</a>
-              </div>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-              </form>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html" title="Gamestart homepage"><img src="G.png" width="32" height="32" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link active" href="index.html">HOME<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="account.html">MY ACCOUNT</a>
+            <a class="nav-item nav-link" href="store.html">STORE</a>
+            <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">G I V E A W A Y</a>
+        </div>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Go!</button>
+        </form>
+      </div>
+    </header>
+    <!-- jumbotron-->
+        <div class="jumbotron jumbotron-fluid bg-white m-0" style="background-image: linear-gradient( #343a40, #33AEFF, white);">
+          <div class="container text-center">
+            <h1 class="logo text-light">GAMESTART</h1>
+            <p class="lead">Most user-friendly marketplace for the gamers.</p>
           </div>
-        </header>
-        <!-- jumbotron-->
-        <div class="row mx-0">
-            <div class="col">
-                <div class="jumbotron jumbotron-fluid bg-white m-0">
-                    <div class="container text-center">
-                        <h1 class="logo">GAMESTART</h1>
-                        <p class="lead">Most user-friendly marketplace for the gamers.</p>
-                    </div>
-                </div>
-             </div>   
-         </div> 
-         <!-- carousel--> 
-         <div class="row mx-0">
-             <div class="col px-0">
-              <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active" data-interval="10000">
-                    <img src="banner.jpg" class="d-block w-100" alt="e-sports racing">
-                  </div>
-                  <div class="carousel-item" data-interval="10000">
-                    <img src="banner2.jpg" class="d-block w-100" alt="esgs2019">
-                  </div>
-                  <div class="carousel-item" data-interval="10000">
-                    <img src="banner3.jpg" class="d-block w-100" alt="dota2 pro series">
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-             </div>
-         </div>
-
-         <!--footer-->
-         <footer class="row footer mx-0 mt-5 bg-dark text-center py-2 text-muted align-items-end">
-            <div class="col-sm-6 col-12">
-              © 2020 Copyright: <a href="index.html" class="text-light"> GAMESTART</a>
-            </div>
-            <div class="col-sm-6">
-              <a href="https://github.com/Szymeg" class="pr-5">
-                <img src="git.png" title="Szymeg github" alt="Creator's github" width="32" height="32">
-              </a>
-              <a href="https://www.linkedin.com/in/szymon-andrzejewski-417806178/">
-                <img src="link.png" title="Szymon linkedin" alt="Creator's linkedin" width="32" height="32">
-              </a>
-            </div>
-
-         </footer>
+        </div>
+    <!-- carousel--> 
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-interval="10000">
+          <img src="banner.jpg" class="d-block w-100" alt="e-sports racing">
+        </div>
+        <div class="carousel-item" data-interval="10000">
+          <img src="banner2.jpg" class="d-block w-100" alt="esgs2019">
+        </div>
+        <div class="carousel-item" data-interval="10000">
+          <img src="banner3.jpg" class="d-block w-100" alt="dota2 pro series">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!--footer-->
+    <footer class="row footer mx-0 mt-5 bg-dark text-center py-2 text-muted align-items-end">
+      <div class="col-sm-6 col-12">
+        © 2020 Copyright: <a href="index.html" class="text-light"> GAMESTART</a>
+      </div>
+      <div class="col-sm-6">
+        <a href="https://github.com/Szymeg" class="pr-5">
+          <img src="git.png" title="Szymeg github" alt="Creator's github" width="32" height="32">
+        </a>
+        <a href="https://www.linkedin.com/in/szymon-andrzejewski-417806178/">
+          <img src="link.png" title="Szymon linkedin" alt="Creator's linkedin" width="32" height="32">
+        </a>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
